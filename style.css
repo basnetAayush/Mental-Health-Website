@@ -1,0 +1,825 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*-------------------------------------------------------------
+---------------------------Home--------------------------------
+---------------------------------------------------------------*/
+
+/*..................header..................*/
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-color:#F5EFE7;
+}
+/*..................navigation..................*/
+nav{
+    display: flex;
+    padding-top: 1%;
+    padding-right: 3%;
+    padding-left: 3%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 50px;
+    border-radius: 50%;
+}
+nav h5{
+    padding-left: 1%;
+    font-size: 15px;
+    font-weight: bold;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color:black;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #213555;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/*..................hero section..................*/
+.textbox{
+    width: 90%;
+    color: black;
+    position: absolute;
+    top: 30%;
+    left: 3%;
+    transform: translate(-50%, -5);
+}
+.textbox h1{
+    font-size: 62px;
+}
+.textbox p{
+    margin: 10px 0 40px;
+    color: black;
+    text-align: justify;
+    padding-right: 50%;
+}
+.hero-img{
+    margin-left: 60%;
+    margin-top: 5%;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 34px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #213555 ;
+    background: #213555;
+    transition: 0.5s;
+    color: #fff;
+}
+
+/*..................about us..................*/
+.aboutus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.about-col{
+    flex-basis: 31%;
+    background: #F5EFE7;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.about-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+.feedback{
+    background-color: #F5EFE7;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.feedback-box {
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color:#ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.feedback-box p{
+    text-align: center;
+}
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color:#213555;
+}
+
+/*..................Case Data..................*/
+.cases-data{
+    align-items: center;
+    display: flex;
+    position: relative;
+    background-color: #213555;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    justify-content: space-between;
+}
+
+.cases-data p{
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/*..................emotion regulation techniques..................*/
+.tech h1{
+    color:#000000;
+}
+.tech{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.tech-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.tech-col img{
+    width: 100%;
+    display: block;
+    background-color:#F5EFE7;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5sec;
+}
+
+.layer:hover{
+    background: #f5efe780;
+    cursor: pointer;
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: black;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+
+/*..................Consultation Section..................*/
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #213555;
+}
+
+.contact-details {
+    width: 40%;
+    padding-right: 20px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.contact-details h1 {
+    text-align: left;
+    color: white;
+}
+
+.contact-details p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.contact-details i {
+    margin-right: 10px;
+    color: white;
+    font-size: x-large;
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 3%;
+    padding-bottom: 2%;
+    width: 55%;
+    border-radius: 1%;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+    color: rgb(0, 0, 0);
+}
+
+label {
+    font-weight: normal;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    background-color: #f5efe738;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #213555c1;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #213555;
+}
+
+/*..................footer..................*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #000000;
+    background: #F5EFE7;
+}
+.footer p{
+    padding-top: 1px;
+    font-weight: 500;
+}
+.icons{
+    cursor: pointer;
+    margin: 0 13px;
+    padding: 5px 0;
+    font-size:xx-large;
+}
+.icons i{
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.foot-link{
+    flex: 1;
+    text-align: center;
+}
+.foot-link ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.foot-link ul li a{
+    color:black;
+    text-decoration: none;
+    font-size: 15px;
+}
+.foot-link ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #213555;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.foot-link ul li:hover::after{
+    width: 100%;
+}
+
+.instagram-link{
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.5s;
+}
+
+.instagram-link:hover{
+    color: rgb(255, 0, 0);
+}
+.instagram-icon{
+    font-size: x-large;
+}
+
+.phone-icon{
+    font-size: x-large;
+    position: relative;
+    cursor: help;
+}
+
+.ph-num {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #213555;
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none;
+}
+
+.phone-icon:hover .ph-num {
+    display: block;
+}
+
+.footer-two{
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #ffffff;
+    background:#213555;
+}
+.footer-two p{
+    color: #fff;
+}
+
+
+
+
+/*-------------------------------------------------------------
+---------------------------Quiz--------------------------------
+---------------------------------------------------------------*/
+.quiz-header{
+    height: 50vh;
+    width: 100%;
+    background-color: #F5EFE7;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: black;
+}
+.quiz-header h1{
+    margin-top: 100px;
+    padding-top: 85px;
+    padding-bottom: 2px;
+}
+.quiz-content{
+    padding-top: 3%;
+    text-align: center;
+}
+
+.quiz-content .para{
+    font-size: 15px;
+    padding-left: 10%;
+    padding-right: 50%;
+    text-align: left;
+    padding-top: 4%;
+    text-align: justify;
+}
+.quiz-img{
+    width: 500px;
+    height: 500px;
+    padding-right: 100px;
+    padding-top: 0%;
+    float: right;
+    margin-bottom: 0px;
+}
+.quiz-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 34px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    margin-right: 8%;
+    margin-left: 5%;
+}
+.quiz-btn:hover{
+    border: 1px solid #213555 ;
+    background: #213555;
+    transition: 0.5s;
+    color: #fff;
+}
+
+.quiz-note{
+    font-style: italic;
+    font-weight: bold;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 50px;
+    padding-right: 50%;
+}
+
+
+
+/*-------------------------------------------------------------
+---------------------------About Us----------------------------
+---------------------------------------------------------------*/
+.aboutus-header{
+    height: 50vh;
+    width: 100%;
+    background-color: #F5EFE7;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: black;
+}
+.aboutus-header h1{
+    margin-top: 100px;
+    padding-top: 85px;
+    padding-bottom: 2px;
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 3px;
+    padding-bottom: 50px;
+}
+.about-colm{
+    flex-basis: 48%;
+    padding: 30px 2px;
+    padding-top: 5%;
+}
+.about-colm h1{
+    margin-top: 0%;
+    text-align:left;
+}
+.about-img{
+    width: 100%;
+    border-radius: 5px;
+    margin-top: -10%;
+}
+.about-colm h1{
+    padding-top: 5px;
+}
+.about-colm p{
+    padding: 15px 0 25px;
+    text-align: justify;
+}
+.aboutus-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 34px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    margin-right: 0%;
+    margin-left: 10%;
+}
+.aboutus-btn:hover{
+    border: 1px solid #213555 ;
+    background: #213555;
+    transition: 0.5s;
+    color: #fff;
+}
+.insta-info{
+    flex-basis: 42%;
+    margin-bottom: 4%;
+}
+.insta-info h1{
+    padding-left: 60%;
+    padding-right: 10%;
+    padding-top: 8%;
+}
+.insta-info p{
+    padding-left: 60%;
+    padding-right: 10%;
+    text-align: justify;
+}
+.insta-img{
+    width: 40%;
+    margin-left: 10%;
+    margin-top: -25%;
+}
+.instagram-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 34px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    margin-right: 0%;
+    margin-left: 10%;
+}
+.instagram-btn:hover{
+    border: 1px solid #213555 ;
+    background: #213555;
+    transition: 0.5s;
+    color: #fff;
+}
+
+/*-------------------------------------------------------------
+---------------------------Mindfulness-------------------------
+---------------------------------------------------------------*/
+.mind-header{
+    height: 50vh;
+    width: 100%;
+    background-color: #F5EFE7;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: black;
+}
+.mind-header h1{
+    margin-top: 100px;
+    padding-top: 85px;
+    padding-bottom: 2px;
+}
+.mind-content{
+    padding-top: 3%;
+    text-align: center;
+}
+
+.mind-content .para{
+    font-size: 15px;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+.mind-img{
+    width: 500px;
+    height: 500px;
+    padding-right: 100px;
+    padding-top: 0%;
+    float: right;
+    margin-bottom: 0px;
+}
+.mind-btn:hover{
+    border: 1px solid #213555 ;
+    background: #213555;
+    transition: 0.5s;
+    color: #fff;
+}
+.mindful{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 4%;
+}
+
+.mind-note{
+    font-style: italic;
+    font-weight: bold;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 50px;
+    padding-right: 50%;
+}
+
+.mind-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    background-color:#2135552d;
+    border-radius: 5%;
+    
+}
+.mind-col:hover{
+    background-color: #213555;
+    transition: 0.5s;
+    color: #F5EFE7;
+}
+.mind-col h4{
+    text-align: center;
+    padding-top: 2%;
+}
+
+.mind-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 34px;
+    font-size: 14px;
+    background: transparent;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    margin-left: 45%;
+    margin-right: 40%;
+}
+.mind-btn:hover{
+    border: 1px solid #213555 ;
+    background: #213555;
+    transition: 0.5s;
+    color: #fff;
+}
+.mindful-two{
+    background-color: #F5EFE7;
+    text-align: center;
+    padding-top: 85px;
+    padding-bottom: 4%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+
+/*-------------------------------------------------------------
+---------------------------Video--------------------------------
+---------------------------------------------------------------*/
+.video-header{
+    height: 50vh;
+    width: 100%;
+    background-color: #F5EFE7;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: black;
+}
+.video-header h1{
+    margin-top: 100px;
+    padding-top: 85px;
+}
+.vid-head-para{
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: center;
+}
+.video-content{
+    padding-top: 3%;
+    text-align: center;
+}
+
+.video-content .para{
+    font-size: 15px;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: left;
+    padding-top: 4%;
+    text-align: center;
+}
+.video-res{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.video-res .para{
+    text-align: center;
+}
+.vid-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    background-color:#2135552d;
+    border-radius: 5%;
+}
+.vid-col h4{
+    text-align: center;
+    padding-top: 2%;
+}
+.vid-col:hover{
+    background-color: #213555;
+    transition: 0.5s;
+    color: #F5EFE7;
+}
+.video-restwo{
+    background-color: #F5EFE7;
+    padding-top: 4%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+
+.video-resthree{
+    padding-top: 4%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+
+
